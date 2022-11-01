@@ -6,8 +6,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { RequirementComponent } from './requirement/requirement.component';
 import { ManageLeadComponent } from './manage-lead/manage-lead.component';
-
-
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     ProfileComponent,
@@ -17,7 +18,10 @@ import { ManageLeadComponent } from './manage-lead/manage-lead.component';
   ],
   imports: [
     CommonModule,
-    ManageLeadRoutingModule
+    ManageLeadRoutingModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ]
 })
 export class ManageLeadModule { }
